@@ -1,6 +1,7 @@
 <template>
     <div class="header">
         <h1>{{title}}</h1>
+        <!--$routerHistory是自己挂载到vue原型上的-->
         <i v-if="$routerHistory.canBack()" @click="back" class="cubeic-back"></i>
         <div class="extend">
             <slot></slot>
